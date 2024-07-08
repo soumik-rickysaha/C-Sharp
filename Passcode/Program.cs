@@ -6,17 +6,26 @@ class Passcode
 {
     public static void Main(string[] args)
     {
-        Console.Write("Emter the passcode :");
-        String? passcode=Console.ReadLine(); //To fix this warning, you can use the null - forgiving operator (?) to tell the compiler that you are sure the value will not be null
+        Boolean flag = false;
 
-        if (passcode == "secret")
+        while (!flag)
         {
-            Console.WriteLine("Pass");
-        }
-        else
-        {
-            Console.WriteLine("Fail");
-        }
+            Console.Write("Emter the passcode :");
+            String? passcode = Console.ReadLine(); //To fix this warning, you can use the null - forgiving operator (?) to tell the compiler that you are sure the value will not be null
 
+
+
+            if (passcode == "secret")
+            {
+                Console.WriteLine("Pass");
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Fail");
+            }
+
+
+        }
     }
 }
