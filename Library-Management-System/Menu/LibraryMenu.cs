@@ -8,17 +8,35 @@ namespace Library_Management_System.Menu
 {
     internal class LibraryMenu
     {
-       public void LoadBookMenu()
+
+        public LibraryMenu()
         {
+            printBlankLines();
+            Console.WriteLine("Welcome to Library Management System");
+            Console.WriteLine("==========================================");
+        }
+
+        public void printMasterMenu()
+        {
+            printBlankLines();
+            Console.WriteLine("1. Student Login");
+            Console.WriteLine("2. Librarian Login");
+            Console.WriteLine("3. Admin Login");
+
+        }
+        public void printLoadBookMenu()
+        {
+            printBlankLines();
             Console.WriteLine("1. Add Book");
             Console.WriteLine("2. Delete Book");
             Console.WriteLine("3. Update Book");
             Console.WriteLine("4. Return Book");
         }
 
-        public void LoadAdminMenu()
+        public void printLoadAdminMenu()
         {
-            Console.WriteLine("1. Login");            
+            printBlankLines();
+            Console.WriteLine("1. Login");
             Console.WriteLine("2. Add Admin");
             Console.WriteLine("3. Create Student Card");
             Console.WriteLine("4. Print Book Inventory Count");
@@ -26,6 +44,29 @@ namespace Library_Management_System.Menu
             Console.WriteLine("6. Add Librarian");
             Console.WriteLine("7. Update Librarian Details");
             Console.WriteLine("8. Delete Librarian");
+            Console.WriteLine("9. Print Inventory");
+        }
+
+        private void printBlankLines()
+        {
+            Console.WriteLine("\n\n\n\n");
+        }
+
+        public int getResponse()
+        {
+            int response;
+
+            while (true)
+            {
+                Console.Write("\nEnter your response : ");
+                response = int.Parse(Console.ReadLine());
+
+                if (response != 0)
+                {
+                    break;
+                }
+            }
+            return response;
         }
     }
 }
