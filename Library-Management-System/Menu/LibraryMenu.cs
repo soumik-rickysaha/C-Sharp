@@ -55,7 +55,7 @@ namespace Library_Management_System.Menu
             Console.WriteLine("9. Print Inventory");
         }
 
-        private void printBlankLines()
+        public void printBlankLines()
         {
             Console.WriteLine("\n\n\n\n");
         }

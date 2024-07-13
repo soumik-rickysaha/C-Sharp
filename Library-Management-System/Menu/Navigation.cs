@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library_Management_System.Login;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,17 @@ namespace Library_Management_System.Menu
 {
     internal class Navigation
     {
+        //Objects Declarations
+
         LibraryMenu _menu = new LibraryMenu();
+        StudentLogin _studentLogin = new StudentLogin();
+
+        //Variable Declarations
         int userResponse;
         public void startProgram()
         {
             int totalInvalidTrys = 0;
-            while (totalInvalidTrys<4)
+            while (totalInvalidTrys < 4)
             {
                 _menu.printMasterMenu();
                 userResponse = _menu.getResponse();
@@ -21,7 +27,16 @@ namespace Library_Management_System.Menu
                 switch (userResponse)
                 {
                     case 1:
-                        _menu.printStudentMenu();
+                        bool validStudentFlag = _studentLogin.VerifyUsernameAndPassword();
+                        if (validStudentFlag)
+                        {
+                            _menu.printStudentMenu();
+
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid User");
+                        }
                         break;
                     case 2:
                         _menu.printBookMenu();
