@@ -12,17 +12,37 @@ namespace Library_Management_System.Menu
         int userResponse;
         public void startProgram()
         {
-            _menu.printMasterMenu();
-            userResponse=_menu.getResponse();
-
-            switch (userResponse)
+            int totalInvalidTrys = 0;
+            while (totalInvalidTrys<4)
             {
-                case 1:
-                    Console.WriteLine("Student Login");
-                    break;
+                _menu.printMasterMenu();
+                userResponse = _menu.getResponse();
+
+                switch (userResponse)
+                {
+                    case 1:
+                        _menu.printStudentMenu();
+                        break;
+                    case 2:
+                        _menu.printBookMenu();
+                        break;
+                    case 3:
+                        _menu.printAdminMenu();
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Selection. Please Try Again.");
+                        totalInvalidTrys++;
+                        break;
+
+                }
+
             }
 
-            
+            if (totalInvalidTrys > 3)
+            {
+                Console.WriteLine("Exiting Application. Reached Total Number of Invalid tries");
+            }
+
         }
     }
 }

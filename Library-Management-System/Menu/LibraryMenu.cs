@@ -24,7 +24,15 @@ namespace Library_Management_System.Menu
             Console.WriteLine("3. Admin Login");
 
         }
-        public void printLoadBookMenu()
+        public void printStudentMenu()
+        {
+            printBlankLines();
+            Console.WriteLine("1. Enroll for a Book");
+            Console.WriteLine("2. Return a Book");
+            //Console.WriteLine("3. Admin Login");
+
+        }
+        public void printBookMenu()
         {
             printBlankLines();
             Console.WriteLine("1. Add Book");
@@ -33,7 +41,7 @@ namespace Library_Management_System.Menu
             Console.WriteLine("4. Return Book");
         }
 
-        public void printLoadAdminMenu()
+        public void printAdminMenu()
         {
             printBlankLines();
             Console.WriteLine("1. Login");
