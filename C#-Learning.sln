@@ -1,15 +1,8 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#-Practise", "C#-Practise\C#-Practise.csproj", "{BCDE22F2-CAF0-4980-98B5-68C34DE62AD1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Passcode", "Passcode\Passcode.csproj", "{933F4865-6A51-47DE-AFFF-BF20DB990FB3}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatCounting", "RepeatCounting\RepeatCounting.csproj", "{D0C1F9F3-3296-493B-92D3-B989A84BF272}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library-Management-System", "Library-Management-System\Library-Management-System.csproj", "{BE68ED3E-7C8F-41A7-8C30-26FDFDD51692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library-Management-System", "Library-Management-System\Library-Management-System.csproj", "{BE68ED3E-7C8F-41A7-8C30-26FDFDD51692}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,18 +10,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BCDE22F2-CAF0-4980-98B5-68C34DE62AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCDE22F2-CAF0-4980-98B5-68C34DE62AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCDE22F2-CAF0-4980-98B5-68C34DE62AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCDE22F2-CAF0-4980-98B5-68C34DE62AD1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{933F4865-6A51-47DE-AFFF-BF20DB990FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{933F4865-6A51-47DE-AFFF-BF20DB990FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{933F4865-6A51-47DE-AFFF-BF20DB990FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{933F4865-6A51-47DE-AFFF-BF20DB990FB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0C1F9F3-3296-493B-92D3-B989A84BF272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0C1F9F3-3296-493B-92D3-B989A84BF272}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0C1F9F3-3296-493B-92D3-B989A84BF272}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0C1F9F3-3296-493B-92D3-B989A84BF272}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE68ED3E-7C8F-41A7-8C30-26FDFDD51692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BE68ED3E-7C8F-41A7-8C30-26FDFDD51692}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE68ED3E-7C8F-41A7-8C30-26FDFDD51692}.Release|Any CPU.ActiveCfg = Release|Any CPU
