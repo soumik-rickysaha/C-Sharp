@@ -15,6 +15,13 @@ namespace Library_Management_System.Menu
             _menu.printMasterMenu();
             userResponse=_menu.getResponse();
 
+            switch (userResponse)
+            {
+                case 1:
+                    Console.WriteLine("Student Login");
+                    break;
+            }
+
             
         }
     }
